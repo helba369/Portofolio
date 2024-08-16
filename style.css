@@ -41,6 +41,10 @@ section::before {
     font-size: 48px;
 }
 
+.home .col-4 img {
+    width: 100%;
+}
+
 .home .arrow img {
     width: 60px;
 }
@@ -106,7 +110,7 @@ section::before {
     grid-area: work-1;
 }
 
-#work-1:hover::after{
+#work-1:hover::after {
     content: 'Web Project';
 }
 
@@ -114,7 +118,7 @@ section::before {
     grid-area: work-2;
 }
 
-#work-2:hover::after{
+#work-2:hover::after {
     content: 'SQL';
 }
 
@@ -122,7 +126,7 @@ section::before {
     grid-area: work-3;
 }
 
-#work-3:hover::after{
+#work-3:hover::after {
     content: 'Data Science';
 }
 
@@ -141,6 +145,19 @@ section::before {
 
 .form-label {
     font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+    .home img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    section::before {
+        left: -10px;
+        font-size: 64px;
+    }
 }
 
 
